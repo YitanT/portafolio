@@ -24,17 +24,49 @@
   <header class="header">
     <div class="navbar">
       <div id="toggle-theme" class="toggle-theme">
-        <img src="/assets/icons/moon.svg" alt="icon-theme" class="toggle-theme__icon" class="toggle-theme__icon">
+        <img id="toggle-icon" src="/assets/icons/moon.svg" alt="icon-theme" class="toggle-theme__icon"
+          class="toggle-theme__icon">
       </div>
     </div>
+    <ul class="menu-container">
+      <li class="menu">Sobre mi</li>
+      <li class="menu">proyectos</li>
+      <li class="menu">contactame</li>
+    </ul>
   </header>
 
   <main class="main">
     <h1 class="title">
       Bienvenido
     </h1>
-  </main>
 
+    <div class="projects-container">
+
+      <div class="card__image--container">
+        <img src="assets/images/project.jpg" alt="landing page" class="card__image">
+      </div>
+
+      <div class="project">
+
+        <div class="tags--container">
+          <span class="project__tag">GodotScript</span>
+        </div>
+
+        <h2 class="card__title">El Reenacer Del Maat</h2>
+
+        <p class="card__text">
+          Rpg clasico con un ligero sistema de relaciones inspirado en la saga de juegos "Shin Megami
+          Tensei: Persona". Este proyecto es mucho más ambicioso y se separa en 3 partes.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="button button--primary">Demo</a>
+          <a href="#" class="button button--ghost">codigo</a>
+        </div>
+      </div>
+
+
+  </main>
   <script src="/js/script.js"></script>
 </body>
 

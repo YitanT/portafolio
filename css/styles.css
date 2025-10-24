@@ -3,7 +3,7 @@
   --text-color: hsl(0, 0%, 31%);
   --bg-color: hsl(0, 0%, 90%);
   --bg-card-color: hsl(0, 0%, 98%);
-  --border-radius: 0.4em;
+  --border-radius: 1.2em;
   --transition: color 0.1s, background-color 0.2s ease-in-out;
 }
 
@@ -13,6 +13,7 @@
 
 body {
   margin: 0;
+  position: relative;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: var(--transition);
@@ -29,7 +30,8 @@ body.dark {
   background-color: #333;
   display: flex;
   align-items: center;
-  height: 75px;
+  justify-content: space-between;
+  height: 70px;
   padding: 0 1em;
   background-color: var(--bg-card-color);
   border-radius: var(--border-radius);
@@ -45,4 +47,17 @@ body.dark {
 .toggle-theme__icon {
   margin: 0.5em;
   width: 30px;
+}
+
+.menu-container {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  margin-right: 10px;
 }
