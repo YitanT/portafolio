@@ -8,6 +8,7 @@
 
   <!-- Styles -->
   <link rel="stylesheet" href="/css/styles.css">
+
   <!-- iconos -->
 
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -28,26 +29,68 @@
           class="toggle-theme__icon">
       </div>
     </div>
+
     <ul class="menu-container">
-      <li class="menu">Sobre mi</li>
-      <li class="menu">proyectos</li>
-      <li class="menu">contactame</li>
+      <a href="#sobre-mi" class="menu">Sobre mi</a>
+      <a href="#projects" class="menu">proyectos</a>
     </ul>
   </header>
 
   <main class="main">
+
     <h1 class="title">
       Bienvenido
     </h1>
 
-    <div class="projects-container">
+    <div class="profile-container">
+        <img src="/assets/images/uff-cine.jpg" id="sobre-mi" alt="yo con mucho cine" class="card__image image-profile">
+      <div class="profile">
 
-      <div class="card__image--container">
+        <h2 class="title">Angelo Rosal</h2>
+
+        <h3 class="title">
+          sobre mi:
+        </h3>
+
+        <div class="link-container">
+          <i class="ti ti-mail-spark icon"></i>
+          <a href="mailto:angelofranchi20@gmail.com" class="link">
+            angelofranchi20@gmail.com
+          </a>
+        </div>
+
+        <div class="link-container">
+          <i class="ti ti-phone icon"></i>
+          <a href="tel:04127104865" class="link">+58 04127104865</a>
+        </div>
+
+        <div class="link-container">
+          <i class="ti ti-file-cv icon"></i>
+          <a href="/assets/cv/Curriculum Vitae Programador Web Minimalista Tipográfico Blanco y Negro.pdf" class="link"
+            target="_blank">Aquí
+            esta mi cv</a>
+        </div>
+        <p class="card__text" data-section="profile" data-value="description">
+          Bienvenido a mi portafolio, mi nombre es Angelo )(aunque muchos amigos me conocen como yiyi).
+          Conocí la programación gracias al youtuber "Dorian desings" y "hola mundo" desde entonces decidi
+          adentrarme en el mundo de la programación y desarrollo de aplicaciones.
+        </p>
+
+        <p class="card__text" data-section="profile" data-value="description">
+          Estudie en la Universidad De Administración Industrial y Tecnología mejor conocida como I.U.T.A,
+          fui el delegado de la clase guiando a mis compañeros con paciencia, divulgando información,
+          además de como mediador entre ellos y los profesores o coordinadores de la universidad.
+        </p>
+      </div>
+    </div>
+
+    <div class="project-container">
+
+      <div id="projects" class="card__image--container">
         <img src="assets/images/project.jpg" alt="landing page" class="card__image">
       </div>
 
       <div class="project">
-
         <div class="tags--container">
           <span class="project__tag">GodotScript</span>
         </div>
@@ -64,7 +107,33 @@
           <a href="#" class="button button--ghost">codigo</a>
         </div>
       </div>
+    </div>
 
+    <div class="project-container">
+
+      <div class="card__image--container">
+        <img src="assets/images/project.jpg" alt="landing page" class="card__image">
+      </div>
+
+      <div class="project">
+        <div class="tags--container">
+          <span class="project__tag">html</span>
+          <span class="project__tag">Css</span>
+          <span class="project__tag">Js</span>
+        </div>
+
+        <h2 class="card__title">El Reenacer Del Maat</h2>
+
+        <p class="card__text">
+          Rpg clasico con un ligero sistema de relaciones inspirado en la saga de juegos "Shin Megami
+          Tensei: Persona". Este proyecto es mucho más ambicioso y se separa en 3 partes.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="button button--primary">Demo</a>
+          <a href="#" class="button button--ghost">codigo</a>
+        </div>
+      </div>
 
   </main>
   <script src="/js/script.js"></script>

@@ -1,10 +1,11 @@
 :root {
-  --primary-color: hwb(0 50% 6%); 
+  --primary-color: hsl(0, 79%, 72%);
   --text-color: hsl(0, 0%, 31%);
-  --bg-color: hsl(0, 0%, 90%);
-  --bg-card-color: hsl(0, 0%, 98%);
-  --border-radius: 1.2em;
+  --bg-color: hsl(0, 0%, 100%);
+  --bg-card-color: hsl(96, 19%, 79%);
+  --border-radius: 0.8em;
   --transition: color 0.1s, background-color 0.2s ease-in-out;
+  --link-color: hsl(207, 88%, 27%);
 }
 
 * {
@@ -21,9 +22,14 @@ body {
 }
 
 body.dark {
+  /* 
+  --primary-color: hsl(264, 67%, 69%);
+*/
+  --primary-color: hsl(264, 70%, 56%);
   --text-color: hsl(0, 0%, 83%);
-  --bg-color: hsl(0, 0%, 15%);
   --bg-card-color: hsl(0, 0%, 20%);
+  --bg-color: hsl(0, 0%, 15%);
+  --link-color: hsl(265, 100%, 75%);
 }
 
 .header {
@@ -32,6 +38,7 @@ body.dark {
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  width: 100%;
   padding: 0 1em;
   background-color: var(--bg-card-color);
   border-radius: var(--border-radius);
@@ -57,7 +64,88 @@ body.dark {
 
 .menu {
   display: flex;
+  color: var(--text-color);
+  padding: 0.5em;
   cursor: pointer;
   justify-content: space-between;
   margin-right: 10px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+  background-color: var(--bg-card-color);
+}
+
+.profile-container {
+  padding: 1em;
+  display: flex;
+  margin: 0.5em;
+  justify-content: space-between;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+}
+
+.profile {
+  display: flex;
+  margin-top: 85px;
+}
+
+.link-container {
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  border: 2px solid #fff;
+  color: var(--link-color);
+  padding: 0.5em;
+  width: 220px;
+  margin-top: 0.5em;
+}
+
+.link {
+  color: var(--link-color);
+}
+
+.icon {
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+
+.card__image {
+  width: 280px;
+  border-radius: 0.5em;
+}
+
+.image-profile {
+  position: absolute;
+  margin-left: 76.5%;
+  width: 250px;
+}
+
+.project-container {
+  display: flex;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.project {
+  margin: 0.5em;
+}
+
+.project__tag {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.button {
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  border: 2px solid #fff;
+  color: var(--link-color);
+  padding: 0.5em;
+  margin: 0.5em;
 }
