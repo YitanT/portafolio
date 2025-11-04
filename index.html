@@ -32,6 +32,7 @@
 
     <ul class="menu-container">
       <a href="#sobre-mi" class="menu">Sobre mi</a>
+      <a href="#tecnologias" class="menu">Tecnologías</a>
       <a href="#projects" class="menu">proyectos</a>
     </ul>
   </header>
@@ -42,8 +43,8 @@
       Bienvenido
     </h1>
 
-    <div class="profile-container">
-        <img src="/assets/images/uff-cine.jpg" id="sobre-mi" alt="yo con mucho cine" class="card__image image-profile">
+    <div class="card profile-container">
+      <img src="/assets/images/uff-cine.jpg" id="sobre-mi" alt="yo con mucho cine" class="card__image image-profile">
       <div class="profile">
 
         <h2 class="title">Angelo Rosal</h2>
@@ -52,39 +53,122 @@
           sobre mi:
         </h3>
 
-        <div class="link-container">
-          <i class="ti ti-mail-spark icon"></i>
-          <a href="mailto:angelofranchi20@gmail.com" class="link">
-            angelofranchi20@gmail.com
-          </a>
-        </div>
-
-        <div class="link-container">
-          <i class="ti ti-phone icon"></i>
-          <a href="tel:04127104865" class="link">+58 04127104865</a>
-        </div>
-
-        <div class="link-container">
-          <i class="ti ti-file-cv icon"></i>
-          <a href="/assets/cv/Curriculum Vitae Programador Web Minimalista Tipográfico Blanco y Negro.pdf" class="link"
-            target="_blank">Aquí
-            esta mi cv</a>
-        </div>
         <p class="card__text" data-section="profile" data-value="description">
-          Bienvenido a mi portafolio, mi nombre es Angelo )(aunque muchos amigos me conocen como yiyi).
-          Conocí la programación gracias al youtuber "Dorian desings" y "hola mundo" desde entonces decidi
-          adentrarme en el mundo de la programación y desarrollo de aplicaciones.
+          Bienvenido a mi portafolio, mi nombre es Angelo (aunque muchos amigos me conocen como yiyi). Conocí la
+          programación gracias al youtuber "Dorian desings", "hola mundo", "Soy dalto" y "Midudev". Desde entonces
+          decidí adentrarme en el mundo de la programación y desarrollo de aplicaciones.
         </p>
 
         <p class="card__text" data-section="profile" data-value="description">
-          Estudie en la Universidad De Administración Industrial y Tecnología mejor conocida como I.U.T.A,
-          fui el delegado de la clase guiando a mis compañeros con paciencia, divulgando información,
-          además de como mediador entre ellos y los profesores o coordinadores de la universidad.
+          Estudié en la Universidad De Administración Industrial y Tecnología, más conocida como I.U.T.A. Fui el
+          delegado de la clase guiando a mis compañeros con paciencia, divulgando información, además de como mediador
+          entre ellos y los profesores o coordinadores de la universidad.
         </p>
+
+        <div class="links-profile">
+
+          <div class="link-container">
+            <i class="ti ti-mail-spark icon"></i>
+            <a href="mailto:angelofranchi20@gmail.com" class="link link-mail">
+              angelofranchi20@gmail.com
+            </a>
+          </div>
+
+          <div class="link-container">
+
+            <i class="ti ti-phone icon"></i>
+            <a href="tel:04127104865" class="link">+58 04127104865</a>
+          </div>
+
+          <div class="link-container">
+            <i class="ti ti-file-cv icon"></i>
+            <a href="/assets/cv/Curriculum Vitae Programador Web Minimalista Tipográfico Blanco y Negro.pdf"
+              class="link" target="_blank">Aquí
+              esta mi cv</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="project-container">
+    <div class="card habilities-container">
+      <img src="assets/images/hobbie.jpg" alt="hobbies" class="card__image image-habilities">
+
+      <div class="habilities">
+
+        <h2 class="title">
+          Habilidades blandas
+        </h2>
+
+        <h3 class="habs__title">
+          ¿Cuales son mis fortalezas?
+        </h3>
+
+        <ul class="habs__list">
+          <li>
+            Extrovertido.
+          </li>
+          <li>
+            me adapto rapido a las situaciones.
+          </li>
+          <li>
+            Trabajo bien en equipo.
+          </li>
+          <li>
+            Muy curioso.
+          </li>
+      </div>
+      </ul>
+    </div>
+
+    <div id="tecnologias" class="tecnologia-container">
+
+      <h2 class="title-tecnologia">Tecnologías</h2>
+
+      <div class="img-tec-container">
+
+        <div class="card">
+          <img src="/assets/icons/html5.svg" alt="html5" class=" card__image image-tecnologia">
+        </div>
+
+        <div class="card ">
+          <img src="/assets/icons/css_old.svg" alt="css" class="card__image image-tecnologia">
+        </div>
+        <div class="card ">
+          <img src="/assets/icons/javascript.svg" alt="javasccript" class=" card__image image-tecnologia">
+        </div>
+        <div class="card ">
+          <img src="/assets/icons/godot_engine.svg" alt="godot-engine" class="card__image image-tecnologia">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card project-container">
+
+      <div id="projects" class="card__image--container">
+        <img src="assets/images/project.jpg" alt="landing page" class="card__image">
+      </div>
+
+      <div class="project">
+        <div class="tags--container">
+          <span class="project__tag">GodotScript</span>
+        </div>
+
+        <h2 class="card__title">Brick breaker</h2>
+
+        <p class="card__text">
+          Es un juego donde una plataforma golpea unos bloques.
+        </p>
+
+        <div class="buttons">
+          <a href="https://yitan.itch.io/tutorial-de-brick-breaker" class="button button--primary"
+            target="_blank">Demo</a>
+          <a href="#" class="button button--ghost">codigo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card project-container">
 
       <div id="projects" class="card__image--container">
         <img src="assets/images/project.jpg" alt="landing page" class="card__image">
@@ -103,13 +187,15 @@
         </p>
 
         <div class="buttons">
-          <a href="#" class="button button--primary">Demo</a>
+          <a href="https://yitan.itch.io/tutorial-de-brick-breaker" class="button button--primary"
+            target="_blank">Demo</a>
           <a href="#" class="button button--ghost">codigo</a>
         </div>
       </div>
     </div>
 
-    <div class="project-container">
+
+    <div class="card project-container">
 
       <div class="card__image--container">
         <img src="assets/images/project.jpg" alt="landing page" class="card__image">
@@ -122,7 +208,7 @@
           <span class="project__tag">Js</span>
         </div>
 
-        <h2 class="card__title">El Reenacer Del Maat</h2>
+        <h2 class="card__title">lading page o que se yo</h2>
 
         <p class="card__text">
           Rpg clasico con un ligero sistema de relaciones inspirado en la saga de juegos "Shin Megami
@@ -134,6 +220,21 @@
           <a href="#" class="button button--ghost">codigo</a>
         </div>
       </div>
+    </div>
+
+    <footer class="footer">
+      <div class="post-footer">
+        <p class="card__text">
+         &copy; Todos los derechos de este portafolio, sus imagenes y sus logos estan reservados
+        </p>
+
+        <ul class="menu-container">
+          <a href="#sobre-mi" class="menu">Sobre mi</a>
+          <a href="#tecnologias" class="menu">Tecnologías</a>
+          <a href="#projects" class="menu">proyectos</a>
+        </ul>
+      </div>
+    </footer>
 
   </main>
   <script src="/js/script.js"></script>

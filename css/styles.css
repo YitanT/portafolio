@@ -1,10 +1,10 @@
 :root {
-  --primary-color: hsl(0, 79%, 72%);
+  --primary-color: hsl(0, 100%, 80%);
   --text-color: hsl(0, 0%, 31%);
   --bg-color: hsl(0, 0%, 100%);
   --bg-card-color: hsl(96, 19%, 79%);
   --border-radius: 0.8em;
-  --transition: color 0.1s, background-color 0.2s ease-in-out;
+  --transition: all 0.5s ease-out;
   --link-color: hsl(207, 88%, 27%);
 }
 
@@ -22,15 +22,14 @@ body {
 }
 
 body.dark {
-  /* 
-  --primary-color: hsl(264, 67%, 69%);
-*/
   --primary-color: hsl(264, 70%, 56%);
   --text-color: hsl(0, 0%, 83%);
   --bg-card-color: hsl(0, 0%, 20%);
   --bg-color: hsl(0, 0%, 15%);
   --link-color: hsl(265, 100%, 75%);
 }
+
+/* header */
 
 .header {
   background-color: #333;
@@ -68,9 +67,13 @@ body.dark {
   padding: 0.5em;
   cursor: pointer;
   justify-content: space-between;
+  transition: var(--transition);
   margin-right: 10px;
 }
 
+/* header end */
+
+/* profile */
 .image-container {
   display: flex;
   justify-content: flex-end;
@@ -78,28 +81,32 @@ body.dark {
   background-color: var(--bg-card-color);
 }
 
-.profile-container {
+.card {
   padding: 1em;
   display: flex;
   margin: 0.5em;
-  justify-content: space-between;
   background-color: var(--bg-card-color);
   border-radius: var(--border-radius);
 }
 
 .profile {
   display: flex;
-  margin-top: 85px;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.links-profile {
+  display: flex;
 }
 
 .link-container {
   background-color: transparent;
   border-radius: var(--border-radius);
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   color: var(--link-color);
   padding: 0.5em;
-  width: 220px;
   margin-top: 0.5em;
+  margin-right: 0.5em;
 }
 
 .link {
@@ -112,16 +119,51 @@ body.dark {
 }
 
 .card__image {
+  display: flex;
   width: 280px;
   border-radius: 0.5em;
 }
 
-.image-profile {
-  position: absolute;
-  margin-left: 76.5%;
-  width: 250px;
+.card__text {
+  font-size: 1.2rem;
 }
 
+.image-profile {
+  margin-right: 1em;
+}
+
+/* habilities */
+
+.habilities {
+  margin-left: 0.5em;
+}
+
+.image-habilities {
+  width: 300px;
+}
+
+/* tecnologias */
+
+.title-tecnologia {
+  margin: 1em;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+  width: 13%;
+  margin: 0.5em;
+}
+
+.img-tec-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-tecnologia {
+  width: 220px;
+  max-width: 220px;
+}
+
+/* Projectos 
 .project-container {
   display: flex;
   background-color: var(--bg-card-color);
@@ -129,7 +171,7 @@ body.dark {
   padding: 1em;
   margin: 0.5em;
 }
-
+*/
 .project {
   margin: 0.5em;
 }
@@ -148,4 +190,24 @@ body.dark {
   color: var(--link-color);
   padding: 0.5em;
   margin: 0.5em;
+}
+
+/* projects end */
+
+/*  Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  padding: 0 1em;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
 }
