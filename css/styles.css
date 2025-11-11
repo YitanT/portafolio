@@ -1,10 +1,11 @@
 :root {
-  --primary-color: hwb(0 50% 6%); 
+  --primary-color: hsl(0, 100%, 80%);
   --text-color: hsl(0, 0%, 31%);
-  --bg-color: hsl(0, 0%, 90%);
-  --bg-card-color: hsl(0, 0%, 98%);
-  --border-radius: 0.4em;
-  --transition: color 0.1s, background-color 0.2s ease-in-out;
+  --bg-color: hsl(0, 0%, 100%);
+  --bg-card-color: hsl(96, 19%, 79%);
+  --border-radius: 0.8em;
+  --transition: all 0.5s ease-out;
+  --link-color: hsl(207, 88%, 27%);
 }
 
 * {
@@ -13,6 +14,7 @@
 
 body {
   margin: 0;
+  position: relative;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: var(--transition);
@@ -20,16 +22,22 @@ body {
 }
 
 body.dark {
+  --primary-color: hsl(264, 70%, 56%);
   --text-color: hsl(0, 0%, 83%);
-  --bg-color: hsl(0, 0%, 15%);
   --bg-card-color: hsl(0, 0%, 20%);
+  --bg-color: hsl(0, 0%, 15%);
+  --link-color: hsl(265, 100%, 75%);
 }
+
+/* header */
 
 .header {
   background-color: #333;
   display: flex;
   align-items: center;
-  height: 75px;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
   padding: 0 1em;
   background-color: var(--bg-card-color);
   border-radius: var(--border-radius);
@@ -45,4 +53,162 @@ body.dark {
 .toggle-theme__icon {
   margin: 0.5em;
   width: 30px;
+}
+
+.menu-container {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  color: var(--text-color);
+  padding: 0.5em;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: var(--transition);
+  margin-right: 10px;
+}
+
+/* header end */
+
+/* profile */
+.image-container {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+  background-color: var(--bg-card-color);
+}
+
+.card {
+  padding: 1em;
+  display: flex;
+  margin: 0.5em;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+}
+
+.profile {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+
+.links-profile {
+  display: flex;
+}
+
+.link-container {
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  border: 1px solid #fff;
+  color: var(--link-color);
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+}
+
+.link {
+  color: var(--link-color);
+}
+
+.icon {
+  font-size: 1.2em;
+  margin-right: 0.5em;
+}
+
+.card__image {
+  display: flex;
+  width: 315px;
+  border-radius: var(--border-radius);
+}
+
+.card__text {
+  font-size: 1.2rem;
+}
+
+.image-profile {
+  margin-right: 1em;
+}
+
+/* habilities */
+
+.habilities {
+  margin-left: 0.5em;
+}
+
+.image-habilities {
+  width: 315px;
+}
+
+/* tecnologias */
+
+.title-tecnologia {
+  margin: 1em;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+  width: 13%;
+  margin: 0.5em;
+}
+
+.img-tec-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image-tecnologia {
+  width: 220px;
+  max-width: 220px;
+}
+
+/* Projectos 
+.project-container {
+  display: flex;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+  padding: 1em;
+  margin: 0.5em;
+}
+*/
+.project {
+  margin: 0.5em;
+}
+
+.project__tag {
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+.button {
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  border: 2px solid #fff;
+  color: var(--link-color);
+  padding: 0.5em;
+  margin: 0.5em;
+}
+
+/* projects end */
+
+/*  Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  width: 100%;
+  padding: 0 1em;
+  margin-top: 1em;
+  background-color: var(--bg-card-color);
+  border-radius: var(--border-radius);
+}
+
+.post-footer {
+  display: flex;
+  justify-content: space-between;
 }
