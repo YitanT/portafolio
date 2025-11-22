@@ -26,7 +26,12 @@ body.dark {
   --text-color: hsl(0, 0%, 83%);
   --bg-card-color: hsl(0, 0%, 20%);
   --bg-color: hsl(0, 0%, 15%);
+  --link-color: hsl(298, 100%, 75%);
+
+  /* 
+  --link-color: hsl(243, 97%, 71%);
   --link-color: hsl(265, 100%, 75%);
+  */
 }
 
 /* header */
@@ -36,7 +41,7 @@ body.dark {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 70px;
+  height: 80px;
   width: 100%;
   padding: 0 1em;
   background-color: var(--bg-card-color);
@@ -63,7 +68,7 @@ body.dark {
 
 .menu {
   display: flex;
-  color: var(--text-color);
+  color: var(--link-color);
   padding: 0.5em;
   cursor: pointer;
   justify-content: space-between;
@@ -71,9 +76,17 @@ body.dark {
   margin-right: 10px;
 }
 
+.logo {
+  width: 75px;
+}
 /* header end */
 
 /* profile */
+
+.title {
+  color: var(--link-color);
+}
+
 .image-container {
   display: flex;
   justify-content: flex-end;
