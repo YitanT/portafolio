@@ -4,6 +4,7 @@
   --bg-color: hsl(0, 0%, 100%);
   --bg-card-color: hsl(96, 19%, 79%);
   --border-radius: 0.8em;
+  --border-color: #000000;
   --transition: all 0.5s ease-out;
   --link-color: hsl(207, 88%, 27%);
 }
@@ -27,6 +28,8 @@ body.dark {
   --bg-card-color: hsl(0, 0%, 20%);
   --bg-color: hsl(0, 0%, 15%);
   --link-color: hsl(298, 100%, 75%);
+  --border-color: #fff;
+
 
   /* 
   --link-color: hsl(243, 97%, 71%);
@@ -115,7 +118,7 @@ body.dark {
 .link-container {
   background-color: transparent;
   border-radius: var(--border-radius);
-  border: 1px solid #fff;
+  border: 1.5px solid var(--border-color);
   color: var(--link-color);
   padding: 0.5em;
   margin-top: 0.5em;
@@ -176,6 +179,10 @@ body.dark {
   max-width: 220px;
 }
 
+.html-image {
+  width: 202px;
+}
+
 /* Projectos 
 .project-container {
   display: flex;
@@ -185,6 +192,7 @@ body.dark {
   margin: 0.5em;
 }
 */
+
 .project {
   margin: 0.5em;
 }
