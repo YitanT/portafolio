@@ -9,8 +9,22 @@
   --link-color: hsl(207, 88%, 27%);
 }
 
+/* Fonts */
+
+@font-face {
+  font-family: "Nunito-Regular";
+  src: url(/assets/fuentes/Nunito/static/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url(/assets/fuentes/Poppins/Poppins-Medium.ttf);
+}
+
+/* Body, colors and fonts */
 * {
   box-sizing: border-box;
+  font-family: "Nunito-Regular", "Poppins-Medium", "Arial";
 }
 
 body {
@@ -19,7 +33,6 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: var(--transition);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 body.dark {
@@ -36,6 +49,14 @@ body.dark {
   --link-color: hsl(265, 100%, 75%);
   */
 }
+
+/* responsive:
+desktops
+@media (max-width:1020px)
+
+mobiles
+@media (max-width:800px)
+*/
 
 /* header */
 
@@ -65,12 +86,13 @@ body.dark {
 
 .menu-container {
   display: flex;
+  flex-direction: row;
+  padding: 0;
   list-style: none;
   justify-content: space-between;
 }
 
 .menu {
-  display: flex;
   color: var(--link-color);
   padding: 0.5em;
   cursor: pointer;
@@ -81,6 +103,15 @@ body.dark {
 
 .logo {
   width: 75px;
+}
+
+@media screen and (max-width: 915px){
+  .menu {
+    padding: .5em;
+  }
+  .toggle-theme {
+    padding: .2em;
+  }
 }
 /* header end */
 
@@ -104,6 +135,11 @@ body.dark {
   background-color: var(--bg-card-color);
   border-radius: var(--border-radius);
 }
+/* 
+@media screen (max-width: 900px){
+  
+}
+*/
 
 .profile {
   display: flex;
@@ -165,23 +201,37 @@ body.dark {
   background-color: var(--bg-card-color);
   border-radius: var(--border-radius);
   padding: 0.5em;
-  width: 13%;
+  width: 12.2%;
   margin: 0.5em;
 }
 
 .img-tec-container {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  gap: .5em;
+  border: 3px solid blue;
 }
 
 .image-tecnologia {
-  width: 220px;
-  max-width: 220px;
+  max-width: 100%;
+  border: 5px solid red;
 }
 
+/* 
+
 .html-image {
-  width: 202px;
+  width: 205px;
 }
+@media screen (max-width:1024px){
+ .img-tec-container{
+  flex-direction: column;
+ } 
+ .title-tecnologia{
+ width: 30%; 
+ }
+}
+*/
 
 /* Projectos 
 .project-container {
